@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <style>
+<!--    <style>
     .button1 {
         border: none;
         color: white;
@@ -22,19 +22,30 @@
     }
     .button2
     </style>
+    -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Serlokas</title>
     </head>
-<body style="background-color: hsl(220, 1%, 92%);">    
+<body style="background-color: hsl(220, 1%, 92%); font-family:Verdana, Geneva, Tahoma, sans-serif;">    
     <main style=" display: inline-block; width:800px; height:550px; margin-top: 130px; margin-left: 30%; ">  
         <img style="width: 40%; float: left; margin-top: 12%; " src="./serlokas.jpg" alt="Serlokas su pypke menesienoje">
-        <div style=" width: 50%; float: left; margin-top: 20%;">
-            <h1 style="color: rgb(54, 64 ,73); text-align: center; font-size: 55px; font-family:Verdana, Geneva, Tahoma, sans-serif">404</h1>
-            <P style="color:rgb(104, 112, 135);text-align: center; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif;"><b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis earum non sit.</b></P>
-            <p style="color:rgb(104, 112, 135);text-align: center; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"><b>Lorem ipsum dolor sit amet consectetur adipisicing.</b></p>
-            <div style="margin-left: 30%; margin-top: 5%; font-family: Verdana, Geneva, Tahoma, sans-serif;" class="button button1"><b>Back Home</b></div>
+        <div style=" width: 50%; float: left; margin-top: 30%; text-align: center; ">
+            <h1 style="display: inline-block; width: 100%; color: rgb(54, 64 ,73); font-size: 55px; margin: 0; "><b>404</b></h1>
+            <P style="display: inline-block; width: 100%; margin: 0; color:rgb(104, 112, 135); font-size: 20px;"><b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis earum non sit.</b></P>
+            <p style="display: inline-block; color: #A5A5AF; font-size: 12px;"><b>Lorem ipsum dolor sit amet consectetur adipisicing.</b></p>
+            <a href="https://www.banana.com" 
+                target="_blank" 
+                style="display: inline-block; background-color:rgb(104, 112, 135); 
+                    padding: 12px 22px ; 
+                    margin-top: 15px;
+                    margin-bottom: 15px; 
+                    color: white; 
+                    text-decoration: none;
+                    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.24),0 10px 30px 0 rgba(0,0,0,0.19); ">
+                    <b>Back Home</b>
+            </a>
         </div>      
     </main>
 </body>
@@ -43,25 +54,27 @@
 
 
 <!--
+visos tekstines stiliaus savybes gali buti paveldimos is tevu i vaikus;
 
 stiliaus savybes struktura
 sabybes-pavadininas: reiksme;
-
+property-name=property-value;
 
 
 matavimo vienetai:
 px, %
 
 elementu atvaizdavimo budas:
+display: inline;                (defaultinis <span> ir <a> tag'ams)
 display: block;                 (default, ir taikomas daugumai elementu, ir elementai krenta vienas po kitu)
 display: inline-block;          (jei uztenka vietos elementai krenta i viena eile)  
 float: left;                    (priverstinis elementu pritraukimas nurodyta kryptimi)
 
 sventoji marija elementu statymas i viena eile
 
-width: 100%
-display: inline-block;
-float: left;
+width: 100%                     (reiksme turi buti visada, bet adekvati)
+display: inline-block;          (butina parasyti visada, kol atsiras naujas budas)
+float: left;                    (rasome jei elementai turi buti vienoje eileje)
 
 
 elementu tarpusavio atsistumimas
@@ -70,5 +83,14 @@ margin-top: 25%
 margin-right: 25%
 margin-left:25%
 margin-bottom:25%
+
+elemento turinio atsitumimas iki to paties elemento krastu(vidinis issiputimas)
+padding: xpx xpx;
+
+teksto lygiavimas
+text-align: left;
+text-align: right;
+text-align: center;
+
 
 -->
